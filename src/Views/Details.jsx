@@ -60,35 +60,44 @@ class Details extends Component {
             <Typography>
               <b>{country.name}</b>
             </Typography>
-            <Typography>
-              <b>Native Name:</b> {country.nativeName}
-            </Typography>
-            <Typography>
-              <b>Population:</b>{" "}
-              {Intl.NumberFormat("pt-BR", { style: "decimal" }).format(
-                country.population
-              )}
-            </Typography>
-            <Typography>
-              <b>Region:</b> {country.region}
-            </Typography>
-            <Typography>
-              <b>Sub Region:</b> {country.subregion}
-            </Typography>
-            <Typography>
-              <b>Capital:</b> {country.capital}
-            </Typography>
-            <Typography>
-              <b>Top level Domain:</b> {country.topLevelDomain[0]}
-            </Typography>
-            <Typography>
-              <b>Currencies:</b>{" "}
-              {country.currencies.map(item => item.name).join(", ")}
-            </Typography>
-            <Typography>
-              <b>Language:</b>{" "}
-              {country.languages.map(item => item.name).join(", ")}
-            </Typography>
+            <Grid container>
+              <Grid item xs={12} md={6}>
+                <Typography>
+                  <b>Native Name:</b> {country.nativeName}
+                </Typography>
+                <Typography>
+                  <b>Population:</b>{" "}
+                  {Intl.NumberFormat("pt-BR", { style: "decimal" }).format(
+                    country.population
+                  )}
+                </Typography>
+                <Typography>
+                  <b>Region:</b> {country.region}
+                </Typography>
+                <Typography>
+                  <b>Sub Region:</b> {country.subregion}
+                </Typography>
+                <Typography>
+                  <b>Capital:</b> {country.capital}
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography>
+                  <b>Top level Domain:</b> {country.topLevelDomain[0]}
+                </Typography>
+                <Typography>
+                  <b>Currencies:</b>{" "}
+                  {country.currencies.map(item => item.name).join(", ")}
+                </Typography>
+                <Typography>
+                  <b>Language:</b>{" "}
+                  {country.languages.map(item => item.name).join(", ")}
+                </Typography>
+              </Grid>
+            </Grid>
+            <br />
+            <br />
+            <br />
             <Typography>
               <b>Border Countries:</b>
               <Grid container>

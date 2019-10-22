@@ -60,7 +60,7 @@ class Home extends Component {
           <Grid item xs={12} md={3}>
             <Search onBlur={this.searchCountry} />
           </Grid>
-          <Grid item xs={12} md={2}>
+          <Grid item xs={9} md={2}>
             <Select setValues={this.changeRegion} value={region} />
           </Grid>
         </Grid>
