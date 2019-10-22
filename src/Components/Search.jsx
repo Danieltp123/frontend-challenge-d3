@@ -1,10 +1,7 @@
-import React, { Component } from "react";
-import { fade, withStyles, makeStyles } from "@material-ui/core/styles";
+import React from "react";
+import { withStyles } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
-import { getAll, findByRegion, findByName } from "../Api/countries";
-import CountryCard from "../Components/CountryCard";
-import { Grid, InputBase } from "@material-ui/core";
-import Select from "../Components/Select";
+import { InputBase } from "@material-ui/core";
 
 const styles = theme => ({
   root: {

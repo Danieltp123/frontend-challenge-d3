@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { fade, withStyles, makeStyles } from "@material-ui/core/styles";
-import SearchIcon from "@material-ui/icons/Search";
+import { withStyles } from "@material-ui/core/styles";
 import { getAll, findByRegion, findByName } from "../Api/countries";
 import CountryCard from "../Components/CountryCard";
-import { Grid, InputBase } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Select from "../Components/Select";
 import Search from "../Components/Search";
 
